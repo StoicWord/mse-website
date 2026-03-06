@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Maa Sidheswari Electricals (MSE)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --mse-blue: #0d2c54; --mse-gold: #c5a059; --mse-white: #ffffff; --mse-gray: #f4f4f4; }
+        body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: var(--mse-white); }
+
+        /* Navigation */
+        nav { background: var(--mse-blue); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--mse-gold); position: sticky; top: 0; z-index: 1000; }
+        .logo-box { color: white; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+        .logo-main { font-family: 'Montserrat'; font-size: 1.4rem; display: block; line-height: 1.2; }
+        .logo-sub { color: var(--mse-gold); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        nav ul li a:hover { color: var(--mse-gold); }
+
+        /* Page Header */
+        .page-header { background: linear-gradient(rgba(13, 44, 84, 0.9), rgba(13, 44, 84, 0.9)), url('https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=1350&q=80'); 
+                      height: 250px; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .page-header h1 { font-family: 'Montserrat'; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; margin: 0; }
+
+        /* About Section */
+        .about-section { padding: 80px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-text h2 { color: var(--mse-blue); font-family: 'Montserrat'; font-size: 2rem; margin-bottom: 20px; }
+        .about-text p { margin-bottom: 20px; font-size: 1.05rem; text-align: justify; }
+        
+        /* Image Styling */
+        .about-image { position: relative; }
+        .about-image img { width: 100%; border-radius: 10px; box-shadow: 15px 15px 0px var(--mse-gold); object-fit: cover; transition: 0.3s; }
+        .about-image img:hover { transform: scale(1.02); }
+
+        /* Entrepreneur Section */
+        .entrepreneur-box { background: var(--mse-blue); color: white; padding: 60px 10%; text-align: center; }
+        .entrepreneur-box h2 { color: var(--mse-gold); font-family: 'Montserrat'; margin-bottom: 20px; }
+        .entrepreneur-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .e-item { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; border: 1px solid rgba(197, 160, 89, 0.3); transition: 0.3s; }
+        .e-item:hover { background: rgba(255,255,255,0.1); border-color: var(--mse-gold); }
+        .e-item i { font-size: 2.5rem; color: var(--mse-gold); margin-bottom: 15px; }
+
+        /* Location Section */
+        .location-section { padding: 80px 10%; text-align: center; background: var(--mse-gray); }
+        .address-card { background: white; padding: 40px; border-radius: 15px; display: inline-block; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .address-card i { color: var(--mse-gold); font-size: 2.2rem; margin-bottom: 15px; }
+        .address-card h3 { color: var(--mse-blue); font-family: 'Montserrat'; margin-bottom: 10px; }
+        .address-card p { font-size: 1.1rem; color: #555; }
+
+        footer { background: #07192f; color: white; padding: 30px 10%; text-align: center; font-size: 0.9rem; }
+        
+        @media (max-width: 992px) { .about-section { grid-template-columns: 1fr; } .about-image { order: -1; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html" class="logo-box">
+        <i class="fas fa-bolt" style="color:var(--mse-gold); font-size: 1.8rem;"></i>
+        <div>
+            <span class="logo-main">MAA SIDHESWARI</span>
+            <span class="logo-sub">ELECTRICALS (MSE)</span>
+        </div>
+    </a>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-us.html" style="color:var(--mse-gold)">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="page-header">
+    <h1>Our Engineering Legacy</h1>
+</div>
+
+<section class="about-section">
+    <div class="about-text">
+        <h2>Excellence in Every Spark</h2>
+        <p>Maa Sidheswari Electricals (MSE) is a premier electrical contracting firm based in <strong>Chandannagar</strong>. We specialize in providing end-to-end electrical solutions, from high-precision domestic home wiring to massive industrial panel installations and maintenance.</p>
+        <p>Our core strength lies in <strong>Electrical Panel Manufacturing</strong>. We build custom control panels, distribution boards, and automation systems designed to meet the rigorous demands of modern industry while maintaining absolute safety.</p>
+        <p>We take pride in <strong>Empowering Small Entrepreneurs</strong>. If you are starting a business as an electrical contractor, we provide the essential engineering support, custom panels, and technical consulting required to help your business grow.</p>
+    </div>
+    <div class="about-image">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.1VTQ9I9gf81zRkvQCYZyfAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="MSE Industrial Panel Work">
+    </div>
+</section>
+
+<section class="entrepreneur-box">
+    <h2>Solutions for Small Businesses</h2>
+    <div class="entrepreneur-grid">
+        <div class="e-item">
+            <i class="fas fa-tools"></i>
+            <h3>Contractor Toolkit</h3>
+            <p>We supply the specialized panels and components small contractors need to finish big jobs.</p>
+        </div>
+        <div class="e-item">
+            <i class="fas fa-industry"></i>
+            <h3>Custom Panels</h3>
+            <p>High-quality, durable electrical panels made in-house for small-scale industries.</p>
+        </div>
+        <div class="e-item">
+            <i class="fas fa-clipboard-check"></i>
+            <h3>Expert Guidance</h3>
+            <p>We provide technical safety audits to ensure your business meets government standards.</p>
+        </div>
+    </div>
+</section>
+
+<section class="location-section">
+    <div class="address-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Our Office Location</h3>
+        <p>
+            Satiyapirtala (W), Chandannagar,<br>
+            Hooghly, West Bengal, India,<br>
+            <strong>Pin - 712136</strong>
+        </p>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        <p><i class="fas fa-phone-alt"></i> +91 90516 21884</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Maa Sidheswari Electricals (MSE). Designed for Engineering Excellence.</p>
+</footer>
+
+</body>
+</html>

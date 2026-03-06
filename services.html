@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Maa Sidheswari Electricals (MSE)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --mse-blue: #0d2c54; --mse-gold: #c5a059; --mse-light: #f8f9fa; }
+        body { font-family: 'Open Sans', sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        
+        /* Navigation */
+        nav { background: var(--mse-blue); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--mse-gold); position: sticky; top: 0; z-index: 1000; }
+        .logo-box { color: white; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+        .logo-main { font-family: 'Montserrat'; font-size: 1.2rem; display: block; }
+        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+        nav ul li a:hover { color: var(--mse-gold); }
+
+        /* Header */
+        .page-header { background: linear-gradient(rgba(13, 44, 84, 0.85), rgba(13, 44, 84, 0.85)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1350&q=80'); 
+                      color: white; padding: 80px 10%; text-align: center; background-size: cover; background-position: center; }
+        .page-header h1 { font-family: 'Montserrat'; font-size: 2.5rem; margin-bottom: 10px; }
+        
+        /* Service Sections */
+        .service-section { padding: 80px 10%; border-bottom: 1px solid #eee; }
+        .service-section:nth-child(even) { background: var(--mse-light); }
+        .service-tag { color: var(--mse-gold); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px; }
+        
+        /* Technical Table */
+        .service-table { width: 100%; border-collapse: collapse; margin-top: 30px; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .service-table th, .service-table td { border: 1px solid #ddd; padding: 15px; text-align: left; }
+        .service-table th { background: var(--mse-blue); color: white; font-family: 'Montserrat'; }
+
+        .service-list { column-count: 2; margin-top: 20px; padding-left: 20px; }
+        .service-list li { margin-bottom: 10px; }
+
+        footer { background: #07192f; color: white; padding: 40px 10%; text-align: center; font-size: 0.9rem; }
+        .btn-contact { background: var(--mse-gold); color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 20px; font-weight: bold; transition: 0.3s; }
+        .btn-contact:hover { background: #b08d48; transform: translateY(-2px); }
+        
+        @media (max-width: 768px) { .service-list { column-count: 1; } nav { flex-direction: column; gap: 10px; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html" class="logo-box">
+        <i class="fas fa-bolt" style="color:var(--mse-gold)"></i>
+        <span class="logo-main">MAA SIDHESWARI ELECTRICALS</span>
+    </a>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="services.html" style="color:var(--mse-gold)">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="page-header">
+    <h1>Professional Electrical Engineering Services</h1>
+    <p>Comprehensive solutions for Industrial, Commercial, and Residential sectors.</p>
+</header>
+
+<section id="industrial" class="service-section">
+    <span class="service-tag">Heavy Industry</span>
+    <h2>Industrial Wiring & HT/LT Solutions</h2>
+    <p>MSE specializes in high-scale industrial electrical infrastructure. We ensure your plant operates with zero downtime using state-of-the-art engineering practices.</p>
+    
+    
+
+[Image of industrial electrical control panel diagram]
+
+    
+    <ul class="service-list">
+        <li>High Tension (HT) Transformer Installation</li>
+        <li>Busbar Trunking Systems (BBT)</li>
+        <li>PCC & MCC Panel Manufacturing</li>
+        <li>Industrial Cable Laying (Armored)</li>
+        <li>Earth Pit Construction (Chemical & Plate)</li>
+        <li>Lightning Arrestor Installation</li>
+    </ul>
+</section>
+
+<section id="smart-home" class="service-section">
+    <span class="service-tag">Modern Living</span>
+    <h2>Smart Home & Residential Integration</h2>
+    <p>Bringing Maa Sidheswari’s industrial-grade precision to your home. We specialize in luxury and smart home electricals.</p>
+    
+    <table class="service-table">
+        <tr>
+            <th>Service Category</th>
+            <th>Description</th>
+            <th>Typical Duration</th>
+        </tr>
+        <tr>
+            <td>Smart Lighting</td>
+            <td>App-controlled dimming, automated scheduling, and mood lighting.</td>
+            <td>2-3 Days</td>
+        </tr>
+        <tr>
+            <td>Home Rewiring</td>
+            <td>Safety-focused full circuit upgrades for older properties.</td>
+            <td>7-10 Days</td>
+        </tr>
+        <tr>
+            <td>Inverter/UPS Setup</td>
+            <td>Seamless power backup solutions for uninterrupted work-from-home.</td>
+            <td>1 Day</td>
+        </tr>
+    </table>
+</section>
+
+<section id="safety" class="service-section">
+    <span class="service-tag">Compliance & Safety</span>
+    <h2>Electrical Safety Audits</h2>
+    <p>Protect your life and assets with MSE’s rigorous safety inspections. We provide technical reports for industrial compliance and insurance audits.</p>
+    
+    
+
+[Image of digital multimeter measuring voltage]
+
+    
+    <div style="background: white; padding: 25px; border-left: 5px solid var(--mse-gold); margin-top: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <strong>Audit Includes:</strong> 
+        <p>Thermal Imaging of Panels, Load Calculation Analysis, Earth Resistance Tests (ERT), Insulation Continuity Testing, and Short-Circuit Protection Verification.</p>
+    </div>
+    <a href="contact.html" class="btn-contact">Book an Audit Now</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Maa Sidheswari Electricals (MSE). All Services Performed by Certified Professional Electricians.</p>
+    <p><a href="home.html" style="color:var(--mse-gold); text-decoration: none;">Return to Homepage</a></p>
+</footer>
+
+</body>
+</html>
